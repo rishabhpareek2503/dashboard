@@ -43,7 +43,7 @@ function DashboardCard({
 
 export default function Home() {
   const etpUrl = "https://etp-dash-28en-pi.vercel.app"
-  const stpUrl = process.env.NEXT_PUBLIC_STP_URL || '/stp'
+  const stpUrl = "https://stpfinal-q2ne-six.vercel.app"
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
