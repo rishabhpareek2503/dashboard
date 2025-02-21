@@ -51,35 +51,35 @@ export default function Home() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
 
       {/* Logo in upper left */}
-      <div className="absolute top-6 left-6">
+      <div className="absolute top-4 left-4 sm:top-6 sm:left-6">
         <Link href="/">
           <Image
-            src="\logo.png"
+            src="/logo.png"
             alt="Company Logo"
             width={200}
             height={200}
-            className="hover:opacity-80 transition-opacity"
+            className="w-32 sm:w-48 md:w-[200px] hover:opacity-80 transition-opacity"
           />
         </Link>
       </div>
 
       {/* Main content */}
       <main className="relative flex min-h-screen flex-col items-center justify-center p-4 text-center">
-        <div className="max-w-5xl">
-          <h1 className="mb-4 text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
+        <div className="max-w-5xl pt-24 sm:pt-0">
+          <h1 className="mb-4 text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
             STP-ETP Calculation{" "}
             <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
               Dashboards
             </span>
           </h1>
-          <p className="mb-12 text-xl text-gray-400">
+          <p className="mb-8 sm:mb-12 text-lg sm:text-xl text-gray-400">
             Advanced calculation tools for Sewage and Effluent Treatment Plant operations
           </p>
           
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-4 sm:gap-8 md:grid-cols-2">
             <DashboardCard
               title="STP Dashboard"
-              description=" Sewage Treatment Plant calculations and monitoring tools"
+              description="Sewage Treatment Plant calculations and monitoring tools"
               href={stpUrl}
               icon={Droplet}
             />
@@ -94,7 +94,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="absolute bottom-0 w-full p-4 text-center text-sm text-gray-400">
+      <footer className="absolute bottom-0 w-full p-4 text-center text-xs sm:text-sm text-gray-400">
         © {new Date().getFullYear()} Hitesh Enviro Engineering Pvt Ltd. All rights reserved.
       </footer>
     </div>
